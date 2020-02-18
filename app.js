@@ -6,6 +6,8 @@ app.set('view engine', 'ejs');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
+var PORT = process.env.PORT || 8080;
+
 // parse application/json
 app.use(bodyParser.json());
 
@@ -22,4 +24,4 @@ app.get('/', (req, res) => {
 });
 
 
-//app.listen(3000, () => console.log('Example app listening on port 3000!'));
+app.listen(PORT, () => console.log('Our app is running on port ' + PORT + '!'));

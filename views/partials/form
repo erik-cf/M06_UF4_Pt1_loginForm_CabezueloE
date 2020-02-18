@@ -1,0 +1,5 @@
+<form>
+<p>Nombre: </p>
+<input type="text"><br>
+<input type="submit" value="Enviar nom!">
+</form>
